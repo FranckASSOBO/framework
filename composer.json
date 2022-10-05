@@ -1,0 +1,15 @@
+{
+    "name": "hp/framework",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Franck",
+            "email": "franck.assobo@yahoo.com"
+        }
+    ],
+    "require": {}
+}
