@@ -1,5 +1,7 @@
 <?php
 
+use App\Kernel;
+
     /**
      * ----------------------------------------------------
      * Bienvenue dans notre framework fait maison
@@ -18,12 +20,26 @@
 
 require dirname(__DIR__) . "/config/bootstrap.php";
 
-dd($_ENV);
-    // Création d'une nouvelle instance du noyau de l'application
-    
+//dd($_SERVER);
 
-    // Soumission de la requête au noyau
-    // Récupération de la réponse
+// if($_SERVER['REQUEST_URI']=="/")
+// {
+//     dd("page d'accueil");
+
+// }
+// else
+// {
+//     dd("l'utisateur veut accèder à une page");
+
+// }
+    // Création d'une nouvelle instance du noyau de l'application
+    $kernel = new Kernel($container);
+
+/**
+     * Le frontController demande au noyau de soummetrre la requête
+     * et de récupérer la réponse correspondante
+     */
+    $response = $kernel->handleRequest();
 
 
     // Envoi de la réponse au navigateur

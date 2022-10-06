@@ -3,7 +3,7 @@
     "description": "dev",
     "autoload": {
         "psr-4": {
-            "Hp\\Framework\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -12,5 +12,12 @@
             "email": "franck.assobo@yahoo.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php-di/php-di": "^6.4",
+        "vlucas/phpdotenv": "^5.4",
+        "symfony/http-foundation": "^6.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.1"
+    }
 }
