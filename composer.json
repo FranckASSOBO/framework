@@ -1,5 +1,6 @@
 {
     "name": "hp/framework",
+    "description": "dev",
     "autoload": {
         "psr-4": {
             "Hp\\Framework\\": "src/"
